@@ -77,7 +77,7 @@ st.markdown("""
 
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
-header {visibility: hidden;}
+header {background: transparent;}
 
 .glass-card {
     background: rgba(255,255,255,0.08);
