@@ -77,7 +77,28 @@ st.markdown("""
 
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
-header {background: transparent;}
+
+/* =========================
+   TOP BAR BLACK + BLUR
+========================= */
+header {
+    background: rgba(0,0,0,0.85) !important;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+/* SIDEBAR LIGHT PINK + BLUR */
+
+section[data-testid="stSidebar"] {
+    background: rgba(255, 182, 193, 0.18) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+section[data-testid="stSidebar"] * {
+    color: white !important;
+}
 
 .glass-card {
     background: rgba(255,255,255,0.08);
@@ -88,15 +109,6 @@ header {background: transparent;}
     box-shadow: 0 8px 32px rgba(0,0,0,0.35);
     padding: 25px;
     margin-bottom: 20px;
-}
-
-section[data-testid="stSidebar"] {
-    background: rgba(17,24,39,0.95);
-    border-right: 1px solid rgba(255,255,255,0.1);
-}
-
-section[data-testid="stSidebar"] * {
-    color: white !important;
 }
 
 .main-title {
@@ -173,7 +185,6 @@ h1,h2,h3,h4,p,label,span {
 
 </style>
 """, unsafe_allow_html=True)
-
 # =========================================================
 # SESSION STATE
 # =========================================================
