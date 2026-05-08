@@ -182,6 +182,32 @@ section[data-testid="stSidebar"] * {
 h1,h2,h3,h4,p,label,span {
     color: white !important;
 }
+/* SIDEBAR INPUT BOXES BLACK */
+
+section[data-testid="stSidebar"] .stTextInput input,
+section[data-testid="stSidebar"] .stSelectbox div[data-baseweb="select"],
+section[data-testid="stSidebar"] .stMultiSelect div[data-baseweb="select"],
+section[data-testid="stSidebar"] .stNumberInput input,
+section[data-testid="stSidebar"] textarea {
+    background: rgba(0,0,0,0.85) !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    border-radius: 12px !important;
+}
+
+/* DROPDOWN OPTIONS */
+
+div[role="listbox"] {
+    background: rgba(0,0,0,0.95) !important;
+    color: white !important;
+}
+
+/* SIDEBAR LABELS */
+
+section[data-testid="stSidebar"] label {
+    color: white !important;
+    font-weight: 600;
+}
 
 </style>
 """, unsafe_allow_html=True)
