@@ -182,13 +182,48 @@ section[data-testid="stSidebar"] * {
 h1,h2,h3,h4,p,label,span {
     color: white !important;
 }
-/* SIDEBAR INPUT BOXES BLACK */
+/* SIDEBAR INPUTS BLACK */
 
-section[data-testid="stSidebar"] .stTextInput input,
-section[data-testid="stSidebar"] .stSelectbox div[data-baseweb="select"],
-section[data-testid="stSidebar"] .stMultiSelect div[data-baseweb="select"],
-section[data-testid="stSidebar"] .stNumberInput input,
+section[data-testid="stSidebar"] input,
 section[data-testid="stSidebar"] textarea {
+    background-color: rgba(0,0,0,0.9) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+}
+
+/* SELECTBOX */
+
+section[data-testid="stSidebar"] div[data-baseweb="select"] > div {
+    background-color: rgba(0,0,0,0.9) !important;
+    color: white !important;
+    border-radius: 12px !important;
+}
+
+/* MULTISELECT TAGS */
+
+section[data-testid="stSidebar"] span {
+    color: white !important;
+}
+
+/* DROPDOWN MENU */
+
+div[role="listbox"] {
+    background-color: rgba(0,0,0,0.95) !important;
+}
+
+div[role="option"] {
+    background-color: rgba(0,0,0,0.95) !important;
+    color: white !important;
+}
+
+/* SLIDER */
+
+section[data-testid="stSidebar"] .stSlider {
+    background: rgba(0,0,0,0.25);
+    padding: 10px;
+    border-radius: 12px;
+}
     background: rgba(0,0,0,0.85) !important;
     color: white !important;
     border: 1px solid rgba(255,255,255,0.15) !important;
